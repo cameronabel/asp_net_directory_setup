@@ -1,7 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 
 namespace TriangleTracker.Controllers
-
 {
   public class HomeController : Controller
   {
