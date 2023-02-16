@@ -155,7 +155,7 @@ namespace {project_name}.Controllers
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\{project_name}\{project_name}.csproj" />  
+    <ProjectReference Include="..\{project_name}\Program.csproj" />  
   </ItemGroup>
 
 </Project>
