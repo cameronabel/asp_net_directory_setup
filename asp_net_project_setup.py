@@ -83,8 +83,7 @@ namespace {project_name}
 
 namespace {project_name}.Controllers
 """)
-        hc.write("""
-{
+        hc.write("""{
   public class HomeController : Controller
   {
 
@@ -142,8 +141,8 @@ namespace {project_name}.Controllers
     
     os.makedirs(os.path.join(path, f"{project_name}.Tests", "ModelTests"))
     
-    with open(os.path.join(path, f"{project_name}.Tests", f"{project_name}.Tests.csproj"), "w") as ind:
-        ind.write(f"""<Project Sdk="Microsoft.NET.Sdk">
+    with open(os.path.join(path, f"{project_name}.Tests", f"{project_name}.Tests.csproj"), "w") as tcs:
+        tcs.write(f"""<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
