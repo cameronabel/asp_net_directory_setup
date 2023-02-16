@@ -20,7 +20,7 @@ def main():
         
     project_objects = [input("Enter object name: ") for _ in range(object_number)]
     
-    parent_directory = r"C:/Users/Cameron/Epicodus/"
+    parent_directory = r""
     
     path = os.path.join(parent_directory, project_name + ".Solution")
     os.mkdir(path)
@@ -163,7 +163,16 @@ namespace {project_name}.Controllers
 
     for proj_obj in project_objects:
         with open(os.path.join(path, f"{project_name}", "Models", f"{proj_obj}.cs"), "w") as ob:
-            ob.write(f"namespace {project_name}.Models\n{'{'}\n  public class {proj_obj}\n  {'{'}\n  {'}'}\n{'}'}")
+            ob.write(f"""namespace {project_name}.Models\
+{'{'}
+  public class {proj_obj}
+  {'{'}
+    public {proj_obj}
+      {'{'}
+      
+      {'}'}
+  {'}'}
+{'}'}""")
         
         with open(os.path.join(path, f"{project_name}.Tests", "ModelTests", f"{proj_obj}Tests.cs"), "w") as obt:
             obt.write(f"""using Microsoft.VisualStudio.TestTools.UnitTesting;
@@ -185,4 +194,3 @@ namespace {project_name}.Tests
 
 if __name__ == "__main__":
     main()
-    input()
