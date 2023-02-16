@@ -163,11 +163,11 @@ namespace {project_name}.Controllers
 
     for proj_obj in project_objects:
         with open(os.path.join(path, f"{project_name}", "Models", f"{proj_obj}.cs"), "w") as ob:
-            ob.write(f"""namespace {project_name}.Models\
+            ob.write(f"""namespace {project_name}.Models
 {'{'}
   public class {proj_obj}
   {'{'}
-    public {proj_obj}
+    public {proj_obj}()
       {'{'}
       
       {'}'}
