@@ -14,5 +14,6 @@ This is the number of objects you would like to come pre-built in your project. 
 `Enter object name: `
 For each object, you will be prompted for a name. Using the TriangleTracker example again, this might be `Triangle`.
 Each object will have a Model and a ModelTest file built out with some boilerplate empty constructors and tests.
+Remember - commit your .gitignore (included) first!
 
-This is a rough, slapdash templater thrown together in the short few moments before class time - please reach out if you find any bugs or have features to request. Thanks!
+This is a rough, slapdash templater thrown together in the short few moments before class time - please reach out if you find any bugs or have features to request.
