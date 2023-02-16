@@ -1,7 +1,8 @@
-namespace TriangleTracker.Models{
+namespace TriangleTracker.Models
+{
   public class Triangle
   {
-    public Triangle
+    public Triangle()
       {
       
       }

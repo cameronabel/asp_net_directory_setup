@@ -10,7 +10,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\TriangleTracker\TriangleTracker.csproj" />  
+    <ProjectReference Include="..\TriangleTracker\Program.csproj" />  
   </ItemGroup>
 
 </Project>
