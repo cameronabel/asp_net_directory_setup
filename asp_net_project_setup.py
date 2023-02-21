@@ -8,7 +8,6 @@ def main():
             break
         print("Invalid project name")
 
-
     while True:
         try:
             object_number = int(input("How many objects (Models) in your project? "))
@@ -34,8 +33,7 @@ def main():
     os.makedirs(os.path.join(path, f"{project_name}", "Models"))
     os.makedirs(os.path.join(path, f"{project_name}", "Properties"))
     os.makedirs(os.path.join(path, f"{project_name}", "Views", "Home"))
-    
-    
+
     with open(os.path.join(path, f"{project_name}", "Program.cs"), "w") as p:
         p.write(f"""using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.DependencyInjection;
@@ -67,7 +65,7 @@ namespace {project_name}
   }
 }
 """)
-    
+
     with open(os.path.join(path, f"{project_name}", "Program.csproj"), "w") as p_csproj:
         p_csproj.write("""<Project Sdk="Microsoft.NET.Sdk.Web">
 
@@ -77,7 +75,7 @@ namespace {project_name}
 
 </Project>
 """)
-    
+
     with open(os.path.join(path, f"{project_name}", "Controllers", "HomeController.cs"), "w") as hc:
         hc.write(f"""using Microsoft.AspNetCore.Mvc;
 
@@ -138,9 +136,9 @@ namespace {project_name}.Controllers
   </body>
 </html>
 """)
-    
+
     os.makedirs(os.path.join(path, f"{project_name}.Tests", "ModelTests"))
-    
+
     with open(os.path.join(path, f"{project_name}.Tests", f"{project_name}.Tests.csproj"), "w") as tcs:
         tcs.write(f"""<Project Sdk="Microsoft.NET.Sdk">
 
@@ -172,7 +170,7 @@ namespace {project_name}.Controllers
     {'}'}
   {'}'}
 {'}'}""")
-        
+
         with open(os.path.join(path, f"{project_name}.Tests", "ModelTests", f"{proj_obj}Tests.cs"), "w") as obt:
             obt.write(f"""using Microsoft.VisualStudio.TestTools.UnitTesting;
 using {project_name}.Models;
