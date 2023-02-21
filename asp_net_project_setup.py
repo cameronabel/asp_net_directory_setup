@@ -167,9 +167,9 @@ namespace {project_name}.Controllers
   public class {proj_obj}
   {'{'}
     public {proj_obj}()
-      {'{'}
+    {'{'}
       
-      {'}'}
+    {'}'}
   {'}'}
 {'}'}""")
         
