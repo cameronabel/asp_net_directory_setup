@@ -20,3 +20,5 @@ Each object will have a Model and a ModelTest file built out with some boilerpla
 Remember - commit your .gitignore (included) first!\
 \
 This is a rough, slapdash templater thrown together in the short few moments before class time - please reach out if you find any bugs or have features to request.
+
+If you dont plan to include tests (tsk) you may safely delete the `.Tests` directory. Otherwise, you will need to execute `dotnet restore` from that directory in order to link the `.Tests.csproj` file to the program. You can then execute `dotnet test`. The project should build successfully and the empty tests should run.
